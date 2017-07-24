@@ -1,10 +1,25 @@
+# import csv
+# import os
+
+# # read local csv file
+# file_dir = '/Users/doghome/work/guanplus-test/test/read_csv_file/info.csv'
+# date= open(file_dir,'rU')
+# date = csv.reader(date)
+
+# # print dates
+# for user in date:
+#     print(user)
+
+
 import csv
-import os
 
 # read local csv file
-info_file = open('/Users/huangcaiyan/work/guanplus-test/test/read_csv_file/info.csv','rU')
-date = csv.reader(info_file)
+file_dir = '/Users/doghome/work/guanplus-test/test/read_csv_file/info.csv'
+date= open(file_dir,'rU')
+date = csv.reader(date)
 
 # print dates
 for user in date:
-    print(user)
+    print(user[1])
+
+
