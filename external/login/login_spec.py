@@ -1,6 +1,6 @@
 # -*- encoding=utf-8 -*-
 from selenium import webdriver
-from public import Login
+from  login_page import Login
 import time
 
 class LoginTest():
@@ -32,7 +32,7 @@ class LoginTest():
 
 
 LoginTest().test_admin_login()
-LoginTest().test_user_logout()
+# LoginTest().test_user_logout()
 
 
 
