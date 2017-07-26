@@ -1,0 +1,2117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://guanplus-app-accountingfirm-web-stage.cn-north-1.eb.amazonaws.com.cn/" />
+<title>recode_shoupiao</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">recode_shoupiao</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=recipient-name</td>
+	<td>Qq123456</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=usernameInput</td>
+	<td>13683139989</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=passwordInput</td>
+	<td>Qq123456</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=loginButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=有序0726回归（勿动）</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=transactionSideMenu</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//ul[@id='side-menu-child']/div/ul/ul[2]/li[3]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/div/div/label[2]/ng-select/div/div[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/div/div/label[2]/ng-select/div/ul/li[2]/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[2]</td>
+	<td>00000001</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td/ng-select/div/div[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.option-text</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.dropdown-item</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[2]/ng-select/div/div[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[2]/ng-select/div/ul/li[2]/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[3]/ng-select/div/div[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[3]/ng-select/div/ul/li/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[4]/ng-select/div/div[2]/span/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[4]/ng-select/div/ul/li/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@type='number']</td>
+	<td>100</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[3]</td>
+	<td>其他－福利费－管理，借－56020104福利费，贷－22410101临时借入款</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/div[3]/div/span/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[2]</td>
+	<td>00000002</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td/ng-select/div/div[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td/ng-select/div/div[2]/ul/li[2]/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.dropdown-item</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[2]/ng-select/div/div[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[2]/ng-select/div/ul/li[2]/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[3]/ng-select/div/div[2]/span/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[3]/ng-select/div/ul/li[2]/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[4]/ng-select/div/div[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[4]/ng-select/div/ul/li/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@type='number']</td>
+	<td>200</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[3]</td>
+	<td>其他－招待费－管理，借－56020201招待费，贷－22410101临时借入款</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/div[3]/div/span/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[2]</td>
+	<td>00000003</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/div/div/label[3]/ng-select/div/div[2]/span/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/div/div/label[3]/ng-select/div/ul/li[2]/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td/ng-select/div/div[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td/ng-select/div/div[2]/ul/li[2]/div[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.ui-select-choices-row.option-active &gt; div.children-options &gt; button.dropdown-item</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[2]/ng-select/div/div[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[2]/ng-select/div/ul/li[2]/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[4]/ng-select/div/div[2]/span/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[4]/ng-select/div/ul/li[2]/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@type='number']</td>
+	<td>300</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[3]</td>
+	<td>内部代表－办公费－管理，借－56020202办公费，贷－22410101临时借入款</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/div[3]/div/span/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[2]</td>
+	<td>00000004</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/div/div/label[3]/ng-select/div/div[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/div/div/label[3]/ng-select/div/ul/li[3]/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td/ng-select/div/div[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td/ng-select/div/div[2]/ul/li[2]/div[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.ui-select-choices-row.option-active &gt; div.children-options &gt; button.dropdown-item</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[2]/ng-select/div/div[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[2]/ng-select/div/ul/li[2]/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[4]/ng-select/div/div[2]/span/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[4]/ng-select/div/ul/li[3]/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@type='number']</td>
+	<td>500</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@type='number']</td>
+	<td>400</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[3]</td>
+	<td>其他－快递费－管理，借－56020203快递费，贷－22410101临时借入款</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[4]/ng-select/div/div[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td/ng-select/div/div[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.ui-select-choices-row.option-active &gt; div.children-options &gt; button.dropdown-item</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.col-sm-6</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/div[3]/div/span/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[2]</td>
+	<td>00000005</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td/ng-select/div/div[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td/ng-select/div/div[2]/ul/li[2]/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.ui-select-choices-row.option-active &gt; div.children-options &gt; button.dropdown-item</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[2]/ng-select/div/div[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[2]/ng-select/div/ul/li[2]/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[4]/ng-select/div/div[2]/span/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[4]/ng-select/div/ul/li[4]/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@type='number']</td>
+	<td>500</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/div/div/label[3]/ng-select/div/div[2]/span/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/div/div/label[3]/ng-select/div/ul/li[2]/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[3]</td>
+	<td>内部代表－通讯费－管理，借－56020204通讯费，贷－22410101临时借入款</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/div[3]/div/span/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[2]</td>
+	<td>00000006</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/div/div/label[3]/ng-select/div/div[2]/span/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/div/div/label[3]/ng-select/div/ul/li[3]/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td/ng-select/div/div[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td/ng-select/div/div[2]/ul/li[2]/div[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.ui-select-choices-row.option-active &gt; div.children-options &gt; button.dropdown-item</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[2]/ng-select/div/div[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[2]/ng-select/div/ul/li[2]/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[4]/ng-select/div/div[2]/span/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[4]/ng-select/div/ul/li[5]/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@type='number']</td>
+	<td>600</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[3]</td>
+	<td>其他－维修费－管理，借－56020205维修费，贷－22410101临时借入款</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/div[3]/div/span/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[2]</td>
+	<td>00000007</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td/ng-select/div/div[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td/ng-select/div/div[2]/ul/li[2]/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.ui-select-choices-row.option-active &gt; div.children-options &gt; button.dropdown-item</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[2]/ng-select/div/div[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[2]/ng-select/div/ul/li[2]/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[4]/ng-select/div/div[2]/span/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[4]/ng-select/div/ul/li[6]/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@type='number']</td>
+	<td>700</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[3]</td>
+	<td>内部代表－财产保险费－管理，借－56020206财产保险费，贷－22410101临时借入款</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/div/div/label[3]/ng-select/div/div[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/div/div/label[3]/ng-select/div/ul/li[2]/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/div[3]/div/span/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/div/div/label[3]/ng-select/div/div[2]/span/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/div/div/label[3]/ng-select/div/ul/li[3]/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[2]</td>
+	<td>00000008</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td/ng-select/div/div[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td/ng-select/div/div[2]/ul/li[3]/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=li.option-active &gt; div.parent-options</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.ui-select-choices-row.option-active &gt; div.children-options &gt; button.dropdown-item</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[2]/ng-select/div/div[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[2]/ng-select/div/ul/li[2]/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[4]/ng-select/div/div[2]/span/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[4]/ng-select/div/ul/li[7]/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@type='number']</td>
+	<td>800</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[3]</td>
+	<td>其他－设备租赁费－管理，借－56020207设备租赁费，贷－22410101临时借入款</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/div[3]/div/span/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[2]</td>
+	<td>00000009</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/div/div/label[3]/ng-select/div/div[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/div/div/label[3]/ng-select/div/ul/li[2]/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td/ng-select/div/div[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td/ng-select/div/div[2]/ul/li[3]/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=li.option-active &gt; div.parent-options</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='wrapper']/browser-alert/div/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td/ng-select/div/div[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td/ng-select/div/div[2]/span/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[2]/ng-select/div/div[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.ui-select-choices-row.active &gt; a.dropdown-item</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[4]/ng-select/div/div[2]/span/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[4]/ng-select/div/ul/li[8]/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@type='number']</td>
+	<td>900</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[3]</td>
+	<td>内部代表－银行费用－管理，借－560302手续费用，贷－22410101临时借入款</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/div[3]/div/span/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/div/div/label[3]/ng-select/div/div[2]/span/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/div/div/label[3]/ng-select/div/ul/li[3]/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[2]</td>
+	<td>00000010</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td/ng-select/div/div[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td/ng-select/div/div[2]/ul/li[3]/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.dropdown-item</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[2]/ng-select/div/div[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[2]/ng-select/div/ul/li[2]/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[3]/ng-select/div/div[2]/span/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.ui-select-choices-row.active &gt; a.dropdown-item</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[4]/ng-select/div/div[2]/span/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[4]/ng-select/div/ul/li/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@type='number']</td>
+	<td>1000</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[3]</td>
+	<td>其他－差旅费－管理，借－5602030差旅费，贷－22410101临时借入款</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/div[3]/div/span/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/div/div/label[3]/ng-select/div/div[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/div/div/label[3]/ng-select/div/ul/li[2]/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[2]</td>
+	<td>00000011</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td/ng-select/div/div[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td/ng-select/div/div[2]/ul/li[3]/div[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.ui-select-choices-row.option-active &gt; div.children-options &gt; button.dropdown-item</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[2]/ng-select/div/div[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[2]/ng-select/div/ul/li[2]/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[3]/ng-select/div/div[2]/span/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[3]/ng-select/div/ul/li[3]/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[4]/ng-select/div/div[2]/span/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[4]/ng-select/div/ul/li[2]/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@type='number']</td>
+	<td>1100</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[3]</td>
+	<td>内部代表－交通费－管理，借－56020302交通费，贷－22410101临时借入款</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/div[3]/div/span/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[2]</td>
+	<td>00000012</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/div/div/label[3]/ng-select/div/div[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/div/div/label[3]/ng-select/div/ul/li[3]/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td/ng-select/div/div[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td/ng-select/div/div[2]/ul/li[3]/div[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.ui-select-choices-row.option-active &gt; div.children-options &gt; button.dropdown-item</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[2]/ng-select/div/div[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[2]/ng-select/div/ul/li[2]/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[3]/ng-select/div/div[2]/span/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[3]/ng-select/div/ul/li[3]/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[3]/ng-select/div/div[2]/span/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[3]/ng-select/div/ul/li[4]/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[4]/ng-select/div/div[2]/span/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[4]/ng-select/div/ul/li/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@type='number']</td>
+	<td>1200</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[3]</td>
+	<td>其他－汽油费－管理，借－56020303汽油费，贷－22410101临时借入款</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/div[3]/div/span/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/div/div/label[3]/ng-select/div/div[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/div/div/label[3]/ng-select/div/ul/li[2]/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[2]</td>
+	<td>00000013</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td/ng-select/div/div[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td/ng-select/div/div[2]/ul/li[3]/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.ui-select-choices-row.option-active &gt; div.children-options &gt; button.dropdown-item</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[2]/ng-select/div/div[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[2]/ng-select/div/ul/li[2]/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[3]/ng-select/div/div[2]/span/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[3]/ng-select/div/ul/li[4]/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[4]/ng-select/div/div[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[4]/ng-select/div/ul/li[2]/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@type='number']</td>
+	<td>1300</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[3]</td>
+	<td>内部代表－路桥费－管理，借－56020304路桥费，贷－22410101临时借入款</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/div[3]/div/span/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/div/div/label[3]/ng-select/div/div[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/div/div/label[3]/ng-select/div/ul/li[3]/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[2]</td>
+	<td>00000013</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td/ng-select/div/div[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td/ng-select/div/div[2]/ul/li[3]/div[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.ui-select-choices-row.option-active &gt; div.children-options &gt; button.dropdown-item</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[2]/ng-select/div/div[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[2]/ng-select/div/ul/li[2]/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[3]/ng-select/div/div[2]/span/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[3]/ng-select/div/ul/li[4]/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[4]/ng-select/div/div[2]/span/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[4]/ng-select/div/ul/li[3]/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@type='number']</td>
+	<td>13</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[2]</td>
+	<td>00000014</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@type='number']</td>
+	<td>1400</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[3]</td>
+	<td>其他－汽车维修费－管理，借－56020305汽车维修费，贷－22410101临时借入款</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/div[3]/div/span/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/div/div/label[3]/ng-select/div/div[2]/span/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/div/div/label[3]/ng-select/div/ul/li[2]/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[2]</td>
+	<td>00000015</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td/ng-select/div/div[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td/ng-select/div/div[2]/ul/li[3]/div[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td/ng-select/div/div[2]/ul/li[4]/div[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=li.option-active &gt; div.parent-options &gt; div.option-text</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.ui-select-choices-row.option-active &gt; div.children-options &gt; button.dropdown-item</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[2]/ng-select/div/div[2]/span/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[2]/ng-select/div/ul/li[2]/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[3]/ng-select/div/div[2]/span/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[3]/ng-select/div/ul/li[4]/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[4]/ng-select/div/div[2]/span/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[4]/ng-select/div/ul/li[4]/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@type='number']</td>
+	<td>1500</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[3]</td>
+	<td>内部代表－汽车保险费－管理，借－56020306汽车保险费，贷－22410101临时借入款</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/div[3]/div/span/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[2]</td>
+	<td>00000016</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td/ng-select/div/div[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td/ng-select/div/div[2]/ul/li[4]/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=li.option-active &gt; div.parent-options &gt; div.option-text</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.ui-select-choices-row.option-active &gt; div.children-options &gt; button.dropdown-item</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[2]/ng-select/div/div[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[2]/ng-select/div/ul/li[2]/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[3]/ng-select/div/div[2]/span/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[3]/ng-select/div/ul/li[5]/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[4]/ng-select/div/div[2]/span/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[4]/ng-select/div/ul/li/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@type='number']</td>
+	<td>16000</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[3]</td>
+	<td>其他－物流费－管理，借－56020307物流费，贷－22410101临时借入款</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/div[3]/div/span/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/div/div/label[3]/ng-select/div/div[2]/span/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//input[@type='text'])[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[2]</td>
+	<td>00000017</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td/ng-select/div/div[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td/ng-select/div/div[2]/ul/li[3]/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td/ng-select/div/div[2]/ul/li[4]/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.dropdown-item</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[2]/ng-select/div/div[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[2]/ng-select/div/ul/li[2]/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[3]/ng-select/div/div[2]/span/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[3]/ng-select/div/ul/li[5]/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[4]/ng-select/div/div[2]/span/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[4]/ng-select/div/ul/li[2]/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@type='number']</td>
+	<td>1700</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[3]</td>
+	<td>内部代表－房租费－管理，借－56020401房租费，贷－22410101临时借入款</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/div[3]/div/span/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[2]</td>
+	<td>00000018</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td/ng-select/div/div[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td/ng-select/div/div[2]/ul/li[4]/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.ui-select-choices-row.option-active &gt; div.children-options &gt; button.dropdown-item</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[2]/ng-select/div/div[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[2]/ng-select/div/ul/li[2]/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[3]/ng-select/div/div[2]/span/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[3]/ng-select/div/ul/li[5]/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[4]/ng-select/div/div[2]/span/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.ui-select-choices-row.active &gt; a.dropdown-item</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@type='number']</td>
+	<td>1800</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[3]</td>
+	<td>其他－物业费－管理，借－56020402物业费，贷－22410101临时借入款</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/div[3]/div/span/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/div/div/label[3]/ng-select/div/div[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//input[@type='text'])[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[2]</td>
+	<td>00000019</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td/ng-select/div/div[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td/ng-select/div/div[2]/ul/li[4]/div[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.ui-select-choices-row.option-active &gt; div.children-options &gt; button.dropdown-item</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[2]/ng-select/div/div[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[2]/ng-select/div/ul/li[2]/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[3]/ng-select/div/div[2]/span/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[3]/ng-select/div/ul/li[5]/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[4]/ng-select/div/div[2]/span/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[4]/ng-select/div/ul/li[4]/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@type='number']</td>
+	<td>1900</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[3]</td>
+	<td>内部代表－水费－管理，借－56020403水费，贷－22410101临时借入款</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/div[3]/div/span/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[2]</td>
+	<td>00000020</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td/ng-select/div/div[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td/ng-select/div/div[2]/ul/li[4]/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.ui-select-choices-row.option-active &gt; div.children-options &gt; button.dropdown-item</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[2]/ng-select/div/div[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[2]/ng-select/div/ul/li[2]/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[3]/ng-select/div/div[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[3]/ng-select/div/ul/li[5]/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[4]/ng-select/div/div[2]/span/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[4]/ng-select/div/ul/li[5]/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@type='number']</td>
+	<td>2000</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[3]</td>
+	<td>其他－电费－管理，借－56020404电费，贷－22410101临时借入款</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/div[3]/div/span/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[2]</td>
+	<td>00000021</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td/ng-select/div/div[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td/ng-select/div/div[2]/ul/li[4]/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.ui-select-choices-row.option-active &gt; div.children-options &gt; button.dropdown-item</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[2]/ng-select/div/div[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[2]/ng-select/div/ul/li[2]/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[3]/ng-select/div/div[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[3]/ng-select/div/ul/li[6]/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[4]/ng-select/div/div[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[4]/ng-select/div/ul/li/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@type='number']</td>
+	<td>2100</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[3]</td>
+	<td>内部代表－仓储费－管理，借－56020405仓储费，贷－22410101临时借入款</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/div[3]/div/span/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[2]</td>
+	<td>00000022</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td/ng-select/div/div[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td/ng-select/div/div[2]/ul/li[4]/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.ui-select-choices-row.option-active &gt; div.children-options &gt; button.dropdown-item</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[2]/ng-select/div/div[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[2]/ng-select/div/ul/li[2]/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[3]/ng-select/div/div[2]/span/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[3]/ng-select/div/ul/li[7]/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[4]/ng-select/div/div[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[4]/ng-select/div/ul/li/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@type='number']</td>
+	<td>2200</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[3]</td>
+	<td>其他－装修费－管理，借－56020406装修费，贷－22410101临时借入款</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/div[3]/div/span/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//input[@type='text'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[2]</td>
+	<td>00000023</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td/ng-select/div/div[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td/ng-select/div/div[2]/ul/li[5]/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.dropdown-item</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[2]/ng-select/div/div[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[2]/ng-select/div/ul/li[2]/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[3]/ng-select/div/div[2]/span/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[3]/ng-select/div/ul/li[7]/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[4]/ng-select/div/div[2]/span/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[4]/ng-select/div/ul/li[2]/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@type='number']</td>
+	<td>2300</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[3]</td>
+	<td>内部代表－广告费－管理，借－56020501广告费，贷－22410101临时借入款</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/div[3]/div/span/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[2]</td>
+	<td>00000024</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td/ng-select/div/div[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td/ng-select/div/div[2]/ul/li[5]/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.ui-select-choices-row.option-active &gt; div.children-options &gt; button.dropdown-item</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[2]/ng-select/div/div[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[2]/ng-select/div/ul/li[2]/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[3]/ng-select/div/div[2]/span/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[3]/ng-select/div/ul/li[7]/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[4]/ng-select/div/div[2]/span/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[4]/ng-select/div/ul/li/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/div[3]/div/span/button[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=confirmButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/input-invoice/div/div[3]/div/div/table/tbody/tr/td[10]/button[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=confirmButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/input-invoice/div/div[3]/div/div/table/tbody/tr/td[10]/button[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=confirmButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/input-invoice/div/div[3]/div/div/table/tbody/tr/td[10]/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=newItem</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/edit-input-invoice/div/div[2]/ul/table/tbody/tr[2]/td/ng-select/div/div[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/edit-input-invoice/div/div[2]/ul/table/tbody/tr[2]/td/ng-select/div/div[2]/ul/li[4]/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.ui-select-choices-row.option-active &gt; div.children-options &gt; button.dropdown-item</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=newItem</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/edit-input-invoice/div/div[2]/ul/table/tbody/tr[3]/td/ng-select/div/div[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/edit-input-invoice/div/div[2]/ul/table/tbody/tr[3]/td/ng-select/div/div[2]/ul/li[5]/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.dropdown-item</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/edit-input-invoice/div/div[2]/ul/table/tbody/tr[2]/td[2]/ng-select/div/div[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/edit-input-invoice/div/div[2]/ul/table/tbody/tr[2]/td[2]/ng-select/div/ul/li[2]/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/edit-input-invoice/div/div[2]/ul/table/tbody/tr[3]/td[2]/ng-select/div/div[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/edit-input-invoice/div/div[2]/ul/table/tbody/tr[3]/td[2]/ng-select/div/ul/li[2]/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/edit-input-invoice/div/div[2]/ul/table/tbody/tr[2]/td[3]/ng-select/div/div[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/edit-input-invoice/div/div[2]/ul/table/tbody/tr[2]/td[3]/ng-select/div/ul/li[7]/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/edit-input-invoice/div/div[2]/ul/table/tbody/tr[3]/td[3]/ng-select/div/div[2]/span/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/edit-input-invoice/div/div[2]/ul/table/tbody/tr[3]/td[3]/ng-select/div/ul/li[7]/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/edit-input-invoice/div/div[2]/ul/table/tbody/tr[2]/td[4]/ng-select/div/div[2]/span/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/edit-input-invoice/div/div[2]/ul/table/tbody/tr[2]/td[4]/ng-select/div/ul/li/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/edit-input-invoice/div/div[2]/ul/table/tbody/tr[3]/td[4]/ng-select/div/div[2]/span/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/edit-input-invoice/div/div[2]/ul/table/tbody/tr[3]/td[4]/ng-select/div/ul/li[2]/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='number'])[2]</td>
+	<td>2200</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='number'])[3]</td>
+	<td>2300</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[4]</td>
+	<td>其他－装修费－管理，借－56020406装修费，贷－22410101临时借入款</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[5]</td>
+	<td>内部代表－广告费－管理，借－56020501广告费，贷－22410101临时借入款</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.btn.btn-primary</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/input-invoice/div/div[2]/div/ol/li[3]/button[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/div/div/label[2]/ng-select/div/div[2]/span/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/div/div/label[2]/ng-select/div/ul/li[2]/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/div/div/label[3]/ng-select/div/div[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//input[@type='text'])[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[2]</td>
+	<td>00000027</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td/ng-select/div/div[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td/ng-select/div/div[2]/ul/li[5]/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.ui-select-choices-row.option-active &gt; div.children-options &gt; button.dropdown-item</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[2]/ng-select/div/div[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[2]/ng-select/div/ul/li[2]/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[3]/ng-select/div/div[2]/span/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[3]/ng-select/div/ul/li/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[4]/ng-select/div/div[2]/span/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[4]/ng-select/div/ul/li/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@type='number']</td>
+	<td>2400</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[3]</td>
+	<td>其他－宣传费－管理，借－56020502宣传费，贷－22410101临时借入款</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/div[3]/div/span/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/div/div/label[3]/ng-select/div/div[2]/span/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input.form-control.ui-select-search</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/div/div/label[3]/ng-select/div/ul/li[2]/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//input[@type='text'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[2]</td>
+	<td>00000028</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td/ng-select/div/div[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td/ng-select/div/div[2]/ul/li[5]/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.ui-select-choices-row.option-active &gt; div.children-options &gt; button.dropdown-item</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[2]/ng-select/div/div[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[2]/ng-select/div/ul/li[2]/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[3]/ng-select/div/div[2]/span/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[3]/ng-select/div/ul/li/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[4]/ng-select/div/div[2]/span/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr/td[4]/ng-select/div/ul/li/div/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@type='number']</td>
+	<td>2500</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[3]</td>
+	<td>内部代表－研发费－管理，借－56020503研发费，贷－22410101临时借入款</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//main[@id='body']/tab/new-input-invoice/div/div[2]/ul/div[3]/div/span/button[2]</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>
