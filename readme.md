@@ -8,4 +8,5 @@
  
 # 2. paste the testReport.py file to ..\python\Lib
 
-#
+# 3. run python file.py test
+

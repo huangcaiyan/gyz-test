@@ -5,6 +5,7 @@ class ModuleTest(unittest.TestCase):
 
     def setUp(self):
         self.cal = Calculator(8,4)
+        print 'test start!'
      
     def tearDown(self):
         pass
@@ -16,7 +17,7 @@ class ModuleTest(unittest.TestCase):
 
     def test_sub(self):
         self.cal.sub()
-        self.assertEqual(result,4)
+        self.assertEqual(result,5,msg='your answer is wrong!')
 
     def test_mul(self):
         self.cal.mul()
@@ -27,10 +28,10 @@ class ModuleTest(unittest.TestCase):
         self.assertEqual(result,2)
 
     if __name__=="_main_":
-        # unittest.main()
-        suite = unittest.TestSuite()
-        suite.addTest(ModuleTest("test_add"))
-        suite.addTest(ModuleTest("test_sub"))
+        unittest.main()
+        # suite = unittest.TestSuite()
+        # suite.addTest(ModuleTest("test_add"))
+        # suite.addTest(ModuleTest("test_sub"))
 
-        runner = unittest.TextTestRunner()
-        runner.run(suite)
+        # runner = unittest.TextTestRunner()
+        # runner.run(suite)

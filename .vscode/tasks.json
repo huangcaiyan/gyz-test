@@ -1,10 +1,10 @@
 {
     "version": "0.1.0",
-    "command": "python",
+    "command": "/usr/local/bin/python",
     "isShellCommand": true,
     "osx": {
         "args": [
-            "chrome",
+            "Chrome",
             "/usr/local/bin/chromedriver"
         ]
         // ,
@@ -14,7 +14,9 @@
         // ]
     },
     "args": [
-        "${file}"
+        "${file}",
+        "arg1",
+        "arg2"
     ],
     "showOutput": "always"
 }
