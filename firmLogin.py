@@ -7,12 +7,12 @@ import HTMLTestRunner
 class firmLoginTest(unittest.TestCase):
     def setup(self):
         self.driver = webdriver.Chrome()
-        self.driver.get('https://firms.guanplus.com/login')
+        self.driver.get('https://firms.xxx.com/login')
 
     def test_login(self):
         driver = self.driver
-        username = '13683139989'
-        password = 'qq123456'
+        username = 'xxx'
+        password = 'xxxx'
 
         usernameElem = WebDriverWait(driver, 10).until(
             lambda driver: driver.find_element_by_id('usernameInput'))
