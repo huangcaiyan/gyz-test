@@ -5,10 +5,10 @@ BASE_URL = 'https://firms.guanplus.com'
 # BASE_URL = 'https://web-gyz-stage.guanplus.com'
 
 # 登录信息
-LOGIN_DATA = ['13683139989','QQ123456']
+LOGIN_DATA = ['13683139989','qq123456']
 
 # comp_json ［'username','password','comp_name']
-COMP_DATA= ['13683139989','qq123456','auto_test']
+COMP_NAME = 'auto_test'
 
-ENTER_COMP_INFO= [BASE_URL,COMP_DATA]
+# ENTER_COMP_INFO= [LOGIN_DATA,COMP_DATA]
 

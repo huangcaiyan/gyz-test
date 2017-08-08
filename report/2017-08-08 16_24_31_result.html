@@ -189,8 +189,8 @@ function showOutput(id, name) {
 
 <div class='heading'>
 <h1>管有账测试报告</h1>
-<p class='attribute'><strong>Start Time:</strong> 2017-08-02 16:13:26</p>
-<p class='attribute'><strong>Duration:</strong> 0:00:08.287500</p>
+<p class='attribute'><strong>Start Time:</strong> 2017-08-08 16:24:31</p>
+<p class='attribute'><strong>Duration:</strong> 0:00:05.173889</p>
 <p class='attribute'><strong>Status:</strong> Error 1</p>
 
 <p class='description'>测试用例执行情况：</p>
@@ -222,7 +222,7 @@ function showOutput(id, name) {
 </tr>
 
 <tr class='errorClass'>
-    <td>test_case.login.login_spec.LoginSpec</td>
+    <td>test_case.external.enter_comp_spec.EnterCompSpec</td>
     <td>1</td>
     <td>0</td>
     <td>0</td>
@@ -231,7 +231,7 @@ function showOutput(id, name) {
 </tr>
 
 <tr id='ft1.1' class='none'>
-    <td class='errorCase'><div class='testcase'>test_login3: 用户名为空</div></td>
+    <td class='errorCase'><div class='testcase'>test_enter_comp: 进入公司</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
@@ -246,22 +246,11 @@ function showOutput(id, name) {
         <pre>
         
 ft1.1: Traceback (most recent call last):
-  File "/Users/huangcaiyan/work/guanplus/test_case/login/login_spec.py", line 53, in test_login3
-    danger_msg = dangerpage.get_danger_msg()
-  File "/Users/huangcaiyan/work/guanplus/base/danger_page.py", line 9, in get_danger_msg
-    self.danger_msg_elem = self.driver.find_element_by_class_name(self.danger_msg_classname)
-  File "/usr/local/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 433, in find_element_by_class_name
-    return self.find_element(by=By.CLASS_NAME, value=name)
-  File "/usr/local/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 791, in find_element
-    'value': value})['value']
-  File "/usr/local/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 256, in execute
-    self.error_handler.check_response(response)
-  File "/usr/local/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
-    raise exception_class(message, screen, stacktrace)
-selenium.common.exceptions.InvalidSelectorException: Message: invalid selector: Compound class names not permitted
-  (Session info: chrome=59.0.3071.115)
-  (Driver info: chromedriver=2.30.477690 (c53f4ad87510ee97b5c3425a14c0e79780cdf262),platform=Mac OS X 10.11.6 x86_64)
-
+  File "/Users/huangcaiyan/work/guanplus-test/test_case/external/enter_comp_spec.py", line 17, in test_enter_comp
+    enterCompPage.enter_comp(COMP_DATA)
+  File "/Users/huangcaiyan/work/guanplus-test/base/enter_comp_page.py", line 42, in enter_comp
+    self.click_comp_name(comp_json[1])
+TypeError: click_comp_name() takes 1 positional argument but 2 were given
 
 
         </pre>

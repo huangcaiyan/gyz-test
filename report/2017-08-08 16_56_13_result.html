@@ -189,9 +189,9 @@ function showOutput(id, name) {
 
 <div class='heading'>
 <h1>管有账测试报告</h1>
-<p class='attribute'><strong>Start Time:</strong> 2017-08-02 15:16:41</p>
-<p class='attribute'><strong>Duration:</strong> 0:00:25.485292</p>
-<p class='attribute'><strong>Status:</strong> Pass 1 Failure 2</p>
+<p class='attribute'><strong>Start Time:</strong> 2017-08-08 16:56:13</p>
+<p class='attribute'><strong>Duration:</strong> 0:00:12.373411</p>
+<p class='attribute'><strong>Status:</strong> Error 1</p>
 
 <p class='description'>测试用例执行情况：</p>
 </div>
@@ -221,74 +221,34 @@ function showOutput(id, name) {
     <td>View</td>
 </tr>
 
-<tr class='failClass'>
-    <td>test_case.login.login_spec.LoginSpec</td>
-    <td>3</td>
+<tr class='errorClass'>
+    <td>test_case.external.comp_list_spec.CompListSpec</td>
     <td>1</td>
-    <td>2</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c1',3)">Detail</a></td>
+    <td>0</td>
+    <td>1</td>
+    <td><a href="javascript:showClassDetail('c1',1)">Detail</a></td>
 </tr>
 
-<tr id='pt1.1' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_login: 登陆管有帐</div></td>
-    <td colspan='5' align='center'>pass</td>
-</tr>
-
-<tr id='ft1.2' class='none'>
-    <td class='failCase'><div class='testcase'>test_login1: 用户名不存在</div></td>
+<tr id='ft1.1' class='none'>
+    <td class='errorCase'><div class='testcase'>test_enter_comp1: 进入公司</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.2')" >
-        fail</a>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.1')" >
+        error</a>
 
-    <div id='div_ft1.2' class="popup_window">
+    <div id='div_ft1.1' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.2').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.1').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-ft1.2: Traceback (most recent call last):
-  File "/Users/huangcaiyan/work/guanplus/test_case/login/login_spec.py", line 32, in test_login1
-    self.assertEqual(alert_msg, '此用户名不存在')
-AssertionError: '×\nClose\n此用户不存在' != '此用户名不存在'
-- ×
-- Close
-- 此用户不存在+ 此用户名不存在?    +
-
-
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
-</tr>
-
-<tr id='ft1.3' class='none'>
-    <td class='failCase'><div class='testcase'>test_login2: 密码不正确</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.3')" >
-        fail</a>
-
-    <div id='div_ft1.3' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.3').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-ft1.3: Traceback (most recent call last):
-  File "/Users/huangcaiyan/work/guanplus/test_case/login/login_spec.py", line 39, in test_login2
-    self.assertEqual(alert_msg, '密码不正确')
-AssertionError: '×\nClose\n密码不正确' != '密码不正确'
-- ×
-- Close
-  密码不正确
+ft1.1: Traceback (most recent call last):
+  File "/Users/huangcaiyan/work/guanplus-test/test_case/external/comp_list_spec.py", line 20, in test_enter_comp1
+    compListPage.enter_comp(COMP_DATA)
+TypeError: enter_comp() takes 1 positional argument but 2 were given
 
 
         </pre>
@@ -300,10 +260,10 @@ AssertionError: '×\nClose\n密码不正确' != '密码不正确'
 
 <tr id='total_row'>
     <td>Total</td>
-    <td>3</td>
     <td>1</td>
-    <td>2</td>
     <td>0</td>
+    <td>0</td>
+    <td>1</td>
     <td>&nbsp;</td>
 </tr>
 </table>

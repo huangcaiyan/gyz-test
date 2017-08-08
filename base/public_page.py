@@ -1,5 +1,6 @@
 from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import NoAlertPresentException
+import time
 
 # from selenium import webdriver
 
@@ -16,9 +17,9 @@ class PublicPage:
     # 判断元素是否显示
     def is_element_present(self, elem_loc):
         try:
-            self.driver.get_element_by_xpath(elem_loc)
+            self.driver.find_element_by_xpath(elem_loc)
         except NoSuchElementException as e:
-            return '————————————未找到元素不存在 ！————————————'
+            return False
         return True
 
     # 判断alert框是否出现
@@ -43,20 +44,22 @@ class PublicPage:
             self.accept_next_alert = True
 
     # 日历
-    def select_date(self, day):
+    def select_date(self,calen_xpath, day):
         pre_button = self.driver.find_element_by_xpath(self.pre_button_xpath)
         next_button = self.driver.find_element_by_xpath(self.next_button_xpath)
+        self.driver.find_element_by_xpath(calen_xpath).click()
+        time.sleep(2)
         if pre_button:
             return self.driver.find_element_by_link_text(day).click()
         else:
-            return '————————————选择日历失败 ！———————————— '
+            return False
 
     # 下拉选择
-    def select_dropdown_item(self, item_name):
-        try:
-            item_link_text_loc = self.driver.find_element_by_link_text(
-                itme_name)
-            if item_link_text_loc:
-                return item_link_text_loc.click()
-            else:
-                return '————————————下拉选择失败 ！————————————'
+    # def select_dropdown_item(self, item_name):
+    #     try:
+    #         item_link_text_loc = self.driver.find_element_by_link_text(
+    #             itme_name)
+    #         if item_link_text_loc:
+    #             return item_link_text_loc.click()
+    #         else:
+    #             return 'error'

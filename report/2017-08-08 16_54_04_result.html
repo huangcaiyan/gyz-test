@@ -189,8 +189,8 @@ function showOutput(id, name) {
 
 <div class='heading'>
 <h1>管有账测试报告</h1>
-<p class='attribute'><strong>Start Time:</strong> 2017-08-02 16:11:39</p>
-<p class='attribute'><strong>Duration:</strong> 0:00:08.656898</p>
+<p class='attribute'><strong>Start Time:</strong> 2017-08-08 16:54:04</p>
+<p class='attribute'><strong>Duration:</strong> 0:00:05.153695</p>
 <p class='attribute'><strong>Status:</strong> Error 1</p>
 
 <p class='description'>测试用例执行情况：</p>
@@ -222,7 +222,7 @@ function showOutput(id, name) {
 </tr>
 
 <tr class='errorClass'>
-    <td>test_case.login.login_spec.LoginSpec</td>
+    <td>test_case.external.comp_list_spec.CompListSpec</td>
     <td>1</td>
     <td>0</td>
     <td>0</td>
@@ -231,7 +231,7 @@ function showOutput(id, name) {
 </tr>
 
 <tr id='ft1.1' class='none'>
-    <td class='errorCase'><div class='testcase'>test_login3: 用户名为空</div></td>
+    <td class='errorCase'><div class='testcase'>test_enter_comp1: 进入公司</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
@@ -246,11 +246,9 @@ function showOutput(id, name) {
         <pre>
         
 ft1.1: Traceback (most recent call last):
-  File "/Users/huangcaiyan/work/guanplus/test_case/login/login_spec.py", line 53, in test_login3
-    danger_msg = dangerpage.get_danger_msg()
-  File "/Users/huangcaiyan/work/guanplus/base/danger_page.py", line 8, in get_danger_msg
-    self.danger_msg_elem = self.driver.get_element_by_class_name(self.danger_msg_classname)
-AttributeError: 'WebDriver' object has no attribute 'get_element_by_class_name'
+  File "/Users/huangcaiyan/work/guanplus-test/test_case/external/comp_list_spec.py", line 19, in test_enter_comp1
+    compListPage.enter_comp(COMP_DATA)
+TypeError: enter_comp() takes 1 positional argument but 2 were given
 
 
         </pre>

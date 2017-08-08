@@ -189,9 +189,9 @@ function showOutput(id, name) {
 
 <div class='heading'>
 <h1>管有账测试报告</h1>
-<p class='attribute'><strong>Start Time:</strong> 2017-08-02 16:14:54</p>
-<p class='attribute'><strong>Duration:</strong> 0:00:09.132587</p>
-<p class='attribute'><strong>Status:</strong> Failure 1</p>
+<p class='attribute'><strong>Start Time:</strong> 2017-08-08 16:29:43</p>
+<p class='attribute'><strong>Duration:</strong> 0:00:05.253783</p>
+<p class='attribute'><strong>Status:</strong> Error 1</p>
 
 <p class='description'>测试用例执行情况：</p>
 </div>
@@ -221,22 +221,22 @@ function showOutput(id, name) {
     <td>View</td>
 </tr>
 
-<tr class='failClass'>
-    <td>test_case.login.login_spec.LoginSpec</td>
+<tr class='errorClass'>
+    <td>test_case.external.enter_comp_spec.EnterCompSpec</td>
     <td>1</td>
     <td>0</td>
-    <td>1</td>
     <td>0</td>
+    <td>1</td>
     <td><a href="javascript:showClassDetail('c1',1)">Detail</a></td>
 </tr>
 
 <tr id='ft1.1' class='none'>
-    <td class='failCase'><div class='testcase'>test_login3: 用户名为空</div></td>
+    <td class='errorCase'><div class='testcase'>test_enter_comp: 进入公司</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
     <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.1')" >
-        fail</a>
+        error</a>
 
     <div id='div_ft1.1' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
@@ -245,15 +245,12 @@ function showOutput(id, name) {
         </div>
         <pre>
         
-ft1.1: The danger message is  请填写手机
-Traceback (most recent call last):
-  File "/Users/huangcaiyan/work/guanplus/test_case/login/login_spec.py", line 54, in test_login3
-    self.assertEqual(danger_msg,'请填写手机或者邮箱')
-AssertionError: '请填写手机' != '请填写手机或者邮箱'
-- 请填写手机
-+ 请填写手机或者邮箱
-?      ++++
-
+ft1.1: Traceback (most recent call last):
+  File "/Users/huangcaiyan/work/guanplus-test/test_case/external/enter_comp_spec.py", line 17, in test_enter_comp
+    enterCompPage.enter_comp(ENTER_COMP_INFO)
+  File "/Users/huangcaiyan/work/guanplus-test/base/enter_comp_page.py", line 30, in enter_comp
+    loginPage = LoginPage(self.driver,enter_comp_data[0])
+NameError: name 'enter_comp_data' is not defined
 
 
         </pre>
@@ -267,8 +264,8 @@ AssertionError: '请填写手机' != '请填写手机或者邮箱'
     <td>Total</td>
     <td>1</td>
     <td>0</td>
-    <td>1</td>
     <td>0</td>
+    <td>1</td>
     <td>&nbsp;</td>
 </tr>
 </table>

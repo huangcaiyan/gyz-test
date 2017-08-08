@@ -28,9 +28,7 @@ class LoginPage:
         login_button = self.driver.find_element_by_id(self.login_button_id)
         login_button.click()
 
-    # def alert_msg_hint(self):
-    #     alert_msg = self.driver.find_element_by_tag_name(self.login_alert_msg_tagname)
-    #     return alert_msg.text
+
 
     # 登陆失败信息提示
     def personal_name_show(self):
@@ -38,9 +36,10 @@ class LoginPage:
         return personal_name.text
 
     # 登陆成功用户名展示
-    def login(self, username, password):
+    # login_data:username,password
+    def login(self,login_data):
         self.driver.get(self.url)
-        self.type_username(username)
-        self.type_password(password)
+        self.type_username(login_data[0])
+        self.type_password(login_data[1])
         self.click_login_button()
         time.sleep(2)
