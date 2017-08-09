@@ -10,5 +10,5 @@ LOGIN_DATA = ['13683139989','qq123456']
 # comp_json ［'username','password','comp_name']
 COMP_NAME = 'auto_test'
 
-# ENTER_COMP_INFO= [LOGIN_DATA,COMP_DATA]
+ENTER_COMP_INFO= [LOGIN_DATA,COMP_NAME]
 

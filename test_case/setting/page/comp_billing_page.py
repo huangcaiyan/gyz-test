@@ -1,6 +1,6 @@
 from selenium import webdriver
 
-class CompanyBillingPage:
+class CompBillingPage:
     edit_link_text = '编辑'
     comp_name_name = 'name'
     legal_person_name_name = 'legalPersonName'
