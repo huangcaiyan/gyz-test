@@ -1,7 +1,7 @@
 from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import NoAlertPresentException
 import time
-
+import random
 # from selenium import webdriver
 
 
@@ -54,12 +54,16 @@ class PublicPage:
         else:
             return False
 
-    # 下拉选择
-    # def select_dropdown_item(self, item_name):
-    #     try:
-    #         item_link_text_loc = self.driver.find_element_by_link_text(
-    #             itme_name)
-    #         if item_link_text_loc:
-    #             return item_link_text_loc.click()
-    #         else:
-    #             return 'error'
+    # 随机数
+    def random_num(self,num):
+        return random.randrange(0,num)
+
+    # 点击事件
+    def click_elem(self,elem_loc):
+        elem_loc.click()
+
+        
+        
+
+
+
