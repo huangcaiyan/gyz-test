@@ -28,8 +28,6 @@ class LoginPage:
         login_button = self.driver.find_element_by_id(self.login_button_id)
         login_button.click()
 
-
-
     # 登陆失败信息提示
     def personal_name_show(self):
         personal_name = self.driver.find_element_by_xpath(self.personal_name_xpath)
