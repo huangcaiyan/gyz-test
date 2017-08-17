@@ -35,7 +35,6 @@ class SettingPage:
         self.driver.get(self.base_url + item_url)
         publicPage.is_element_present(item_name)
 
-    def
 
 
 
