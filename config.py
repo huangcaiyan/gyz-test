@@ -10,6 +10,8 @@ class Config(object):
 
     # comp_json ［'username','password','comp_name']
     COMP_NAME = 'auto_test'
+    COMP_NAME_YB ='auto_test_yb'
 
     ENTER_COMP_INFO= [LOGIN_DATA,COMP_NAME]
+    ENTER_COMP_INFO_YB = [LOGIN_DATA,COMP_NAME_YB]
 

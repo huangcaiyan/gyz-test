@@ -18,7 +18,8 @@ class PublicPage:
  # 判断元素是否显示
     def is_element_present(self, elem_loc):
         try:
-            self.driver.find_element_by_xpath(elem_loc)
+            # self.driver.find_element_by_xpath(elem_loc)
+            elem_loc
         except NoSuchElementException as e:
             return e
         return True
@@ -55,8 +56,9 @@ class PublicPage:
         else:
             return False
 # 删除日历
-    def delete_date(self):
-        del_loc = self.driver.find_element_by_css_selector('.fa-remove')
+
+    def delete_date(self, elem_xpath):
+        del_loc = self.driver.find_element_by_xpath(elem_xpath)
         self.scroll_to_elem(del_loc)
         return del_loc.click()
 
@@ -66,7 +68,15 @@ class PublicPage:
 
 # 点击事件
     def click_elem(self, elem_loc):
+        self.scroll_to_elem(elem_loc)
         return elem_loc.click()
+
+# input 框
+    def set_value(self, elem_loc, input_value):
+        self.is_element_present(elem_loc)
+        self.scroll_to_elem(elem_loc)
+        elem_loc.send_keys(input_value)
+
 
 # 将光标定位到元素处
     def scroll_to_elem(self, elem_loc):
@@ -95,7 +105,7 @@ class PublicPage:
         alert_msg_array = []
         alert_loc = self.driver.find_element_by_tag_name('alert')
         alert_msg = alert_loc.text
-        print('alert_msg type=>',alert_msg)
+        print('alert_msg type=>', alert_msg)
         alert_msg_array = alert_msg.spilt('\n')
         print('The alert message is ', alert_msg_array[2])
         close_loc = self.driver.find_element_by_css_selector('.close')

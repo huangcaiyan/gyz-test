@@ -3,9 +3,7 @@ import time
 import unittest
 import sys
 import os
-# pro_root = os.path.dirname(os.path.abspath(__file__))
-# base_dri = os.path.dirname(pro_root)
-# perentdir =  os.path.abspath(os.path.join(os.path.dirname(__file__),os.path.pardir))
+sys.path.append(os.path.abspath(os.path.dirname(__file__) + '/' + '../../'))
 from test_case.setting.page.setting_page import SettingPage
 from base.enter_comp_page import EnterCompPage
 from config import Config
@@ -53,7 +51,8 @@ class CompBillingSpec(unittest.TestCase):
         dangerPage = DangerPage(self.driver)
         page = CompBillingPage(self.driver)
         page.click_edit()
-        page.set_comp_name('')
+        page.set_comp_name(' ')
+        page.save()
         danger_msg = dangerPage.get_danger_msg()
         self.assertEqual(danger_msg, '请填写公司名称')
 
@@ -64,6 +63,7 @@ class CompBillingSpec(unittest.TestCase):
         page = CompBillingPage(self.driver)
         page.click_edit()        
         page.set_legal_person_name('')
+        page.save()
         danger_msg = dangerPage.get_danger_msg()
         self.assertEqual(danger_msg, '请填写法定代表人')
 
@@ -74,6 +74,7 @@ class CompBillingSpec(unittest.TestCase):
         page = CompBillingPage(self.driver)
         page.click_edit()        
         page.set_tax_num('')
+        page.save()
         danger_msg = dangerPage.get_danger_msg()
         self.assertEqual(danger_msg, '请填写纳税人识别号')
 
@@ -84,6 +85,7 @@ class CompBillingSpec(unittest.TestCase):
         page = CompBillingPage(self.driver)
         page.click_edit()        
         publicPage.delete_date()
+        page.save()
         danger_msg = dangerPage.get_danger_msg()
         self.assertEqual(danger_msg, '请填写纳税人识别号')
 

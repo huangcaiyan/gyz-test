@@ -6,7 +6,7 @@ import logging
 
 class CompBillingPage:
 
-    # elem
+    # element loc
     # 编辑
     edit_xpath = '//*[@id="body"]/setting/div[2]/div/gpw-company-billing/div/div/span[2]/a'
 # 公司名称
@@ -26,6 +26,7 @@ class CompBillingPage:
     addr_input_name = 'address'
 # 成立日期calender
     begin_date_calen_xpath = '//*[@id="form"]/div[5]/div/p-calendar'
+    begin_date_dele_xpath = '//*[@id="form"]/div[5]/div[1]/p-calendar/span/span[1]'
 # 纳税人识别号
     tax_number_name = 'taxNumber'
 # 行业dropdown
@@ -90,7 +91,7 @@ class CompBillingPage:
             registered_capital_loc.clear()
             registered_capital_loc.send_keys(registered_num)
             time.sleep(1)
-        except  Exception as e:
+        except Exception as e:
             logging.error('there was an exception %s', str(e))
 
 # 省份
@@ -153,6 +154,16 @@ class CompBillingPage:
         except Exception as e:
             logging.error('there was an exception %s', str(e))
 
+# 删除成立日期
+    def dele_begin_date(self):
+        try:
+            publicPage = PublicPage(self.driver)
+            date_loc = self.driver.find_element_by_xpath(
+                self.begin_date_dele_xpath)
+            publicPage.scroll_to_elem(date_loc)
+            date_loc.click()
+        except Exception as e:
+            logging.error('There was an exception %s', str(e))
 
 # 纳税人识别号
     def set_tax_num(self, num):
@@ -165,7 +176,6 @@ class CompBillingPage:
         except Exception as e:
             logging.error('there was an exception %s', str(e))
 
-
 # 行业
     def select_industry(self, indus_name):
         try:
@@ -177,7 +187,6 @@ class CompBillingPage:
         except Exception as e:
             logging.error('there was an exception %s', str(e))
 
-
 # 服务截止日期
     def select_service_deadline(self, day):
         try:
@@ -186,7 +195,6 @@ class CompBillingPage:
             time.sleep(1)
         except Exception as e:
             logging.error('there was an exception %s', str(e))
-
 
 # 保存
     def save(self):
@@ -198,7 +206,6 @@ class CompBillingPage:
             return save_button.click()
         except Exception as e:
             logging.error('there was an exception %s', str(e))
-
 
 # 取消
     def cancel(self):
