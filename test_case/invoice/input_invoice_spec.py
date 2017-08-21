@@ -14,14 +14,14 @@ class InputInvoiceSpec(unittest.TestCase):
         self.driver.implicitly_wait(30)
         self.driver.maximize_window()
 
-        enterCompPage = EnterCompPage(Config.BASE_URL,self.driver)
+        enterCompPage = EnterCompPage(Config.BASE_URL, self.driver)
         enterCompPage.enter_comp(Config.ENTER_COMP_INFO_YB)
 
     def test_record_input_invoice(self):
         publicPage = PublicPage(self.driver)
         invoicePage = InvoicePage(self.driver, 'input')
         invoicePage.go_to_new_invoice_page(Config.BASE_URL)
-        invoicePage.select_category('福利费')
+        invoicePage.select_category(0, 1)
         time.sleep(4)
 
     def tearDown(self):

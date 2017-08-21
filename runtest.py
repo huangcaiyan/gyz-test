@@ -7,7 +7,8 @@ from test_case.login.login_spec import LoginSpec
 # from test_case.external.comp_list_spec import CompListSpec
 from test_case.setting.spec.comp_billing_spec import CompBillingSpec
 from test_case.salary.salary_spec import SalarySpec
-from test_case.invoice.input_invoice_spec import InputInvoiceSpec
+# from test_case.invoice.input_invoice_spec import InputInvoiceSpec
+from test_case.external.excel_read_spec import ExcelReadSpec
 if __name__ == '__main__':
     testSuite = unittest.TestSuite()
     # 登录页面测试
@@ -37,11 +38,10 @@ if __name__ == '__main__':
     # testSuite.addTest(SalarySpec('test_go_to_labour_record_page'))
 
     # 发票
-    testSuite.addTest(InputInvoiceSpec('test_record_input_invoice'))
-    
-    
-    
-    
+    # testSuite.addTest(InputInvoiceSpec('test_record_input_invoice'))
+
+    # external
+    testSuite.addTest(ExcelReadSpec('test_get_cel_value'))
 
     # testSuite.addTest(RecordInputInvoiceSpec('test1'))
 
