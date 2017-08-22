@@ -19,8 +19,51 @@ class ReadExcel(object):
         sheet = workbook.sheet_by_name(sheet_name)
         return sheet.col_values(col_num)
 
-# 获取单元格内容
+
+# 获取单元格内容sheet_name：sheet名称;row_num:行次;col_num:列次;
     def get_cel_value(self, sheet_name, row_num, col_num):
         workbook = xlrd.open_workbook(self.file_dir)
         sheet = workbook.sheet_by_name(sheet_name)
-        return sheet.cell(row_num, col_num).value
+        sheet_value = sheet.cell(row_num, col_num).value
+        # return str(sheet_value).split('.')[0]
+        return str(int(sheet_value))
+
+# 顺序获取所有excel值
+    def get_value_in_order(self, sheet_index):
+        workbook = xlrd.open_workbook(self.file_dir)
+        sheets = workbook.sheets()  # sheets
+        print(sheets)
+        values = []
+        s = sheets[sheet_index]
+        for row in range(s.nrows):
+            col_value = []
+            for col in range(s.ncols):
+                value = (s.cell(row, col).value)
+                try:
+                    value1 = str(int(value))
+                except:
+                    pass
+                col_value.append(value)
+            values.append(col_value)
+        return values
+
+# 获取excel sheet 名称
+    def get_sheet_name(self):
+        workbook = xlrd.open_workbook(self.file_dir)
+        names = workbook.sheet_names()
+        return names
+
+    def go_to_sheet_page(self, sheet_num):
+        workbook = xlrd.open_workbook(self.file_dir)
+        names = workbook.sheet_names()
+        return names[sheet_num]
+
+    def go_to_sheet_page1(self, sheet_num):
+        workbook = xlrd.open_workbook(self.file_dir)
+        sheet = workbook.sheet_by_index(sheet_num)
+        return sheet
+
+    def go_to_sheet_page2(self, sheet_name):
+        workbook = xlrd.open_workbook(self.file_dir)
+        sheet = workbook.sheet_by_name(sheet_name)
+        return sheet

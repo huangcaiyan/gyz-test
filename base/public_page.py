@@ -75,6 +75,7 @@ class PublicPage:
     def set_value(self, elem_loc, input_value):
         self.is_element_present(elem_loc)
         self.scroll_to_elem(elem_loc)
+        elem_loc.clear()
         elem_loc.send_keys(input_value)
 
 
