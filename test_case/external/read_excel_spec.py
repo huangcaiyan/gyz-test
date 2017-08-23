@@ -5,7 +5,9 @@ from base.read_excel import ReadExcel
 
 
 class ReadExcelSpec(unittest.TestCase):
-    fir_dir = '/Users/huangcaiyan/work/guanplus-test/data/login_data.xlsx'
+    fir_dir = './data/login_data.xlsx'
+
+    # fir_dir = '/Users/doghome/work/guanplus-test/data/login_data.xlsx'
 
     def setUp(self):
         pass
@@ -13,12 +15,12 @@ class ReadExcelSpec(unittest.TestCase):
     def test_get_cel_value(self):
         readExcel = ReadExcel(self.fir_dir)
         cell_value = readExcel.get_cel_value('sheet1', 1, 0)
-        print (cell_value)
+        print(cell_value)
 
     def test_get_value_in_order(self):
         readExcel = ReadExcel(self.fir_dir)
         values = readExcel.get_value_in_order(0)
-        print(values)
+        
 
     def test(self):
         readExcel = ReadExcel(self.fir_dir)

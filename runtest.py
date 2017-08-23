@@ -18,6 +18,7 @@ if __name__ == '__main__':
     # testSuite.addTest(LoginSpec('test_login3'))
     # testSuite.addTest(LoginSpec('test_login4'))
     # testSuite.addTest(LoginSpec('test_login5'))
+    testSuite.addTest(LoginSpec('test_excel_login'))
 
     # 进入公司测试
     # testSuite.addTest(EnterCompSpec('test_enter_comp'))
@@ -41,12 +42,10 @@ if __name__ == '__main__':
     # testSuite.addTest(InputInvoiceSpec('test_record_input_invoice'))
     # testSuite.addTest(InputInvoiceSpec('test_output'))
     # testSuite.addTest(InputInvoiceSpec('test_input_special'))
-    
-    
 
     # external
     # testSuite.addTest(ReadExcelSpec('test_get_cel_value'))
-    testSuite.addTest(ReadExcelSpec('test_get_value_in_order'))
+    # testSuite.addTest(ReadExcelSpec('test_get_value_in_order'))
     # testSuite.addTest(ReadExcelSpec('test'))
 
     now = time.strftime("%Y-%m-%d %H_%M_%S")

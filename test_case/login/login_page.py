@@ -36,6 +36,8 @@ class LoginPage:
     # 登陆成功用户名展示
     # login_data:username,password
     def login(self,login_data):
+        # self.driver.delete_all_cookies()  
+        self.driver.delete_cookie('OAUTH_TOKEN')
         self.driver.get(self.url)
         self.type_username(login_data[0])
         self.type_password(login_data[1])

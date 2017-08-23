@@ -39,16 +39,20 @@ class ReadExcel(object):
         print(sheets)
         values = []
         s = sheets[sheet_index]
+        print('s=',s)
         for row in range(s.nrows):
-            col_value = []
-            for col in range(s.ncols):
-                value = (s.cell(row, col).value)
-                try:
-                    value = str(int(value))
-                except:
-                    pass
-                col_value.append(value)
-            values.append(col_value)
+            if row != 0:
+                print ('s.nrows=',s.nrows)
+                col_value = []
+                for col in range(s.ncols):
+                    value = (s.cell(row, col).value)
+                    try:
+                        value = str(int(value))
+                    except:
+                        pass
+                    col_value.append(value)
+                values.append(col_value)
+        print('values=>',values)
         return values
 
     def get_array(self, sheet_index):
