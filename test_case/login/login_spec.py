@@ -16,9 +16,10 @@ class LoginSpec(unittest.TestCase):
         self.driver = webdriver.Chrome()
         self.driver.implicitly_wait(30)
 
-    def test_login(self):
+    def test_login(self,login_info):
         """登陆管有帐"""
         loginpage = LoginPage(BASE_URL, self.driver)
+        
         loginpage.login(VERIFY_LOGIN)
         personal_name = loginpage.personal_name_show()
         self.assertEqual(personal_name, 'huangcaiyan0714')
@@ -69,6 +70,12 @@ class LoginSpec(unittest.TestCase):
         dangerpage = DangerPage(self.driver)
         danger_msg = dangerpage.get_danger_msg()
         self.assertEqual(danger_msg, '手机格式不正确')
+
+    # def test_excel_login_data(self):
+    #     loginpage = LoginPage(BASE_URL, self.driver)
+    #     loginpage.login
+        
+        
 
     def tearDown(self):
         self.driver.quit()

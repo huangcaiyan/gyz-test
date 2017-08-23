@@ -28,10 +28,14 @@ class ReadExcel(object):
         # return str(sheet_value).split('.')[0]
         return str(int(sheet_value))
 
+# 获取所有sheets
+    def get_sheets(self):
+        workbook = xlrd.open_workbook(self.file_dir)
+        return workbook.sheets()
+
 # 顺序获取所有excel值
     def get_value_in_order(self, sheet_index):
-        workbook = xlrd.open_workbook(self.file_dir)
-        sheets = workbook.sheets()  # sheets
+        sheets = self.get_sheets()
         print(sheets)
         values = []
         s = sheets[sheet_index]
@@ -40,12 +44,19 @@ class ReadExcel(object):
             for col in range(s.ncols):
                 value = (s.cell(row, col).value)
                 try:
-                    value1 = str(int(value))
+                    value = str(int(value))
                 except:
                     pass
                 col_value.append(value)
             values.append(col_value)
         return values
+
+    def get_array(self, sheet_index):
+        values = self.get_value_in_order(self, sheet_index)
+        v_len = values.__len__
+        for array in range(v_len):
+            print (array)
+
 
 # 获取excel sheet 名称
     def get_sheet_name(self):
