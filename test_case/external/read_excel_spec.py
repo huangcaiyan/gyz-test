@@ -7,8 +7,6 @@ from base.read_excel import ReadExcel
 class ReadExcelSpec(unittest.TestCase):
     fir_dir = './data/login_data.xlsx'
 
-    # fir_dir = '/Users/doghome/work/guanplus-test/data/login_data.xlsx'
-
     def setUp(self):
         pass
 

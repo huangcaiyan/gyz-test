@@ -42,17 +42,26 @@ class ReadExcel(object):
         print('s=',s)
         for row in range(s.nrows):
             if row != 0:
-                print ('s.nrows=',s.nrows)
                 col_value = []
                 for col in range(s.ncols):
-                    value = (s.cell(row, col).value)
-                    try:
-                        value = str(int(value))
-                    except:
-                        pass
+                    value = (str(s.cell(row, col).value))
                     col_value.append(value)
-                values.append(col_value)
         print('values=>',values)
+        print('values=>',values[2])
+        return values
+
+    def get_value_in_order1(self, sheet_index):
+        sheets = self.get_sheets()
+        print(sheets)
+        values = []
+        s = sheets[sheet_index]
+        print('s=',s)
+        for row in range(s.nrows):
+            if row != 0:            
+                raw_value = s.row_values(row)
+                values.append(raw_value)
+        print('values=>',values)
+        print('values=>',values[2])
         return values
 
     def get_array(self, sheet_index):

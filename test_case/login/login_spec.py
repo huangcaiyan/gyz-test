@@ -13,16 +13,15 @@ import logging
 
 
 class LoginSpec(unittest.TestCase):
-    file_dir = '/Users/doghome/work/guanplus-test/data/login_data.xlsx'
+    file_dir = './data/login_data.xlsx'
 
     def setUp(self):
         self.driver = webdriver.Chrome()
         self.driver.implicitly_wait(30)
 
-    def test_login(self, login_info):
+    def test_login(self):
         """登陆管有帐"""
         loginpage = LoginPage(Config.BASE_URL, self.driver)
-
         loginpage.login(VERIFY_LOGIN)
         personal_name = loginpage.personal_name_show()
         self.assertEqual(personal_name, 'huangcaiyan0714')
@@ -53,7 +52,7 @@ class LoginSpec(unittest.TestCase):
         loginpage.login(EMPTY_USERNAME)
 
         dangerpage = DangerPage(self.driver)
-        danger_msg = dangerpage.get_danger_msg()
+        danger_msg = dangerpage.get_text_danger_msg()
         self.assertEqual(danger_msg, '请填写手机')
 
     def test_login4(self):
@@ -62,7 +61,7 @@ class LoginSpec(unittest.TestCase):
         loginpage.login(EMPTY_PASSWORD)
 
         dangerpage = DangerPage(self.driver)
-        danger_msg = dangerpage.get_danger_msg()
+        danger_msg = dangerpage.get_text_danger_msg()
         self.assertEqual(danger_msg, '请填写密码')
 
     def test_login5(self):
@@ -71,7 +70,7 @@ class LoginSpec(unittest.TestCase):
         loginpage.login(TYPEERROR_USERNAME)
 
         dangerpage = DangerPage(self.driver)
-        danger_msg = dangerpage.get_danger_msg()
+        danger_msg = dangerpage.get_text_danger_msg()
         self.assertEqual(danger_msg, '手机格式不正确')
 
     def test_excel_login(self):
