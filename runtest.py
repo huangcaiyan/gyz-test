@@ -41,7 +41,9 @@ if __name__ == '__main__':
     # 发票
     # testSuite.addTest(InputInvoiceSpec('test_record_input_invoice'))
     # testSuite.addTest(InputInvoiceSpec('test_output'))
-    testSuite.addTest(InputInvoiceSpec('test_type_input_invoice_special'))
+    # testSuite.addTest(InputInvoiceSpec('test_type_input_invoice_special'))
+    testSuite.addTest(InputInvoiceSpec('test_new_raw'))
+    # testSuite.addTest(InputInvoiceSpec('test'))
 
     # external
     # testSuite.addTest(ReadExcelSpec('test_get_cel_value'))

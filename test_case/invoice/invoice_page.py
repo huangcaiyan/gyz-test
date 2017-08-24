@@ -222,10 +222,23 @@ class InvoicePage:
         self.save()
         time.sleep(5)
 
-    # （收票－专票）发票类型、
-    # def type_info1(self,base_info):
+    # （收票－专票）发票类型、往来、发票号码
+    def type_info1(self, base_info):
+        self.select_invoice_type()
+        self.select_contact(base_info[1])
+        self.set_invoice_num(input_invoice_special_info[2])
 
-    # def type_info2(self,special_info):
+    # （收票-专票）类别、部门、税率、进项税类别、价税合计、备注
+    def type_info2(self, special_info):
+        self.select_category(
+            int(special_info[3]),
+            int(input_invoice_spespecial_infocial_info[4]))
+        self.select_partment(special_info[5])
+        self.select_tax_rate(special_info[6])
+        self.select_input_tax_category(special_info[7])
+        self.set_sum(special_info[8])
+        self.set_attach(special_info[9])
+        self.new_row()
 
 # (收票－专票)发票类型、对方信息、发票号码、类别、部门性质、税率、进项税类别、价税合计、备注
 
@@ -236,7 +249,9 @@ class InvoicePage:
         self.set_invoice_num(input_invoice_special_info[2])
         # self.select_category(
         #     input_invoice_special_info[3][0], input_invoice_special_info[3][0])
-        self.select_category(int(input_invoice_special_info[3]),int(input_invoice_special_info[4]))
+        self.select_category(
+            int(input_invoice_special_info[3]),
+            int(input_invoice_special_info[4]))
         self.select_partment(input_invoice_special_info[5])
         self.select_tax_rate(input_invoice_special_info[6])
         self.select_input_tax_category(input_invoice_special_info[7])
@@ -244,9 +259,9 @@ class InvoicePage:
         self.set_attach(input_invoice_special_info[9])
         self.save_and_add()
 
-    def type_category(self,input_invoice_special_info):
-        self.select_category(input_invoice_special_info[1],input_invoice_special_info[0])
-        
+    def type_category(self, input_invoice_special_info):
+        self.select_category(input_invoice_special_info[1],
+                             input_invoice_special_info[0])
 
 # (收票－专票)发票类型、对方信息、发票号码、类别、部门性质、税率、进项税类别、价税合计、备注
 
@@ -261,8 +276,6 @@ class InvoicePage:
         self.select_input_tax_category(input_invoice_special_info[6])
         self.set_sum(input_invoice_special_info[7])
         self.set_attach(input_invoice_special_info[8])
-
-    
 
 # 开票,发票类型、发票状态、对方信息、发票号码、类别、部门性质、税率、总额、备注
 

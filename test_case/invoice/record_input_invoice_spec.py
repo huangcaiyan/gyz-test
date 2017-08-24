@@ -23,6 +23,7 @@ class RecordInputInvoiceSpec(unittest.TestCase):
         c_url = self.driver.current_url
         assertEqual(self.input_invoice_list_url,c_url)
 
+
     def tearDown(self):
         time.sleep(2)
         self.driver.quit()
