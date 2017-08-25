@@ -49,7 +49,8 @@ class ReadExcel(object):
         print('values=>',values)
         print('values=>',values[2])
         return values
-
+    
+# 行读取值
     def get_value_in_order1(self, sheet_index):
         sheets = self.get_sheets()
         print(sheets)
