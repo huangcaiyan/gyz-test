@@ -3,6 +3,7 @@ from selenium.common.exceptions import NoAlertPresentException
 import time
 import random
 import logging
+from selenium import webdriver
 
 # from selenium import webdriver
 
@@ -15,6 +16,7 @@ class PublicPage:
 
     def __init__(self, driver):
         self.driver = driver
+        # self.driver = webdriver.Chrome()
 
 # 判断元素是否显示
 
@@ -52,7 +54,8 @@ class PublicPage:
 # 日历
 
     def select_date(self, calen_xpath, day):
-        self.driver.find_element_by_xpath(calen_xpath).click()
+        calen_loc = self.driver.find_element_by_xpath(calen_xpath)
+        self.click_elem(calen_loc)
         pre_button = self.driver.find_element_by_xpath(self.pre_button_xpath)
         next_button = self.driver.find_element_by_xpath(self.next_button_xpath)
         time.sleep(2)
@@ -60,6 +63,7 @@ class PublicPage:
             return self.driver.find_element_by_link_text(day).click()
         else:
             return False
+
 # 删除日历
 
     def delete_date(self, elem_xpath):
@@ -75,43 +79,57 @@ class PublicPage:
 # 点击事件
 
     def click_elem(self, elem_loc):
-        self.scroll_to_elem(elem_loc)
-        return elem_loc.click()
+        try:
+            self.scroll_to_elem(elem_loc)
+            return elem_loc.click()
+        except Exception as e:
+            logging.error('There was an exception when click_elem %s', str(e))
 
 # input 框
 
     def set_value(self, elem_loc, input_value):
-        self.is_element_present(elem_loc)
-        self.scroll_to_elem(elem_loc)
-        elem_loc.clear()
-        elem_loc.send_keys(input_value)
+        try:
+            self.is_element_present(elem_loc)
+            self.scroll_to_elem(elem_loc)
+            elem_loc.clear()
+            elem_loc.send_keys(input_value)
+        except Exception as e:
+            logging.error('There was an exception when set_value s%', str(e))
 
-# 将光标定位到元素处
+# 获取文本值
 
+    def get_value(self, elem_loc):
+        try:
+            self.is_alert_present(elem_loc)
+            return lem_loc.text
+        except Exception as e:
+            logging.error('There was an exception when get_value s%', str(e))
+
+    # 将光标定位到元素处
     def scroll_to_elem(self, elem_loc):
-        return self.driver.execute_script('arguments[0].scrollIntoView();',
-                                          elem_loc)
+        try:
+            return self.driver.execute_script('arguments[0].scrollIntoView();',
+                                              elem_loc)
+        except Exception as e:
+            print('Error scrolling down  web elem ', str(e))
 
-# 将光标定位到页面顶部
-
+    # 将光标定位到页面顶部
     def scroll_to_top(self):
         return self.driver.execute_script('scroll(0,-250)')
 
 # 将光标定位到页面底部
+# def scroll_to_bottom(self):
+#     return self.driver.execute_script(
+#         'scroll(0,document.body.scrollHeight)')
+#     # return self.driver.execute_script('scroll(0,-250)')
 
-    def scroll_to_bottom(self):
-        return self.driver.execute_script(
-            'scroll(0,document.body.scrollHeight)')
-        # return self.driver.execute_script('scroll(0,-250)')
-
-    # 选择下拉项
+# 选择下拉项
 
     def select_dropdown_item(self, drop_loc, item_name):
-        drop_loc.click()
+        self.click_elem(drop_loc)
         time.sleep(1)
-        itme_loc = self.driver.find_element_by_link_text(item_name)
-        self.scroll_to_elem(itme_loc)
-        return itme_loc.click()
+        item_loc = self.driver.find_element_by_link_text(item_name)
+        self.click_elem(item_loc)
 
 # alet
 

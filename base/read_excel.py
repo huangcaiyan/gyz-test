@@ -47,7 +47,6 @@ class ReadExcel(object):
                     value = (str(s.cell(row, col).value))
                     col_value.append(value)
         print('values=>',values)
-        print('values=>',values[2])
         return values
     
 # 行读取值

@@ -9,6 +9,9 @@ from test_case.setting.spec.comp_billing_spec import CompBillingSpec
 from test_case.salary.salary_spec import SalarySpec
 from test_case.invoice.input_invoice_spec import InputInvoiceSpec
 from test_case.external.read_excel_spec import ReadExcelSpec
+from test_case.external.upload_file_spec import UploadFileSpec
+from test_case.external.beginning_period_spec import BeginningPeriodSpec 
+
 if __name__ == '__main__':
     testSuite = unittest.TestSuite()
     # 登录页面测试
@@ -42,13 +45,17 @@ if __name__ == '__main__':
     # testSuite.addTest(InputInvoiceSpec('test_record_input_invoice'))
     # testSuite.addTest(InputInvoiceSpec('test_output'))
     # testSuite.addTest(InputInvoiceSpec('test_type_input_invoice_special'))
-    testSuite.addTest(InputInvoiceSpec('test_new_raw'))
+    # testSuite.addTest(InputInvoiceSpec('test_new_raw'))
     # testSuite.addTest(InputInvoiceSpec('test'))
 
     # external
     # testSuite.addTest(ReadExcelSpec('test_get_cel_value'))
     # testSuite.addTest(ReadExcelSpec('test_get_value_in_order'))
     # testSuite.addTest(ReadExcelSpec('test'))
+    # testSuite.addTest(UploadFileSpec('test_upload_file'))
+    # testSuite.addTest(BeginningPeriodSpec('test_import_beginning_data'))
+    testSuite.addTest(BeginningPeriodSpec('test_distribute_bank'))
+    
 
     now = time.strftime("%Y-%m-%d %H_%M_%S")
     filename = './report/' + now + '_result.html'
