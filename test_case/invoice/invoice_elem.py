@@ -25,3 +25,16 @@ input_invoice_sum_elem = '//*[@id="body"]/tab/new-input-invoice/div/div[2]/ul/di
 # 记开票发票输入框 xpath
 output_invoice_sum_elem = '//*[@id="body"]/tab/new-output-invoice/div/div[2]/ul/div[1]/div/label[5]/div/input'
 
+
+# 开票
+# 开票－开票导入页面
+# 开票导入上传按钮input id
+output_import_btn_elem = 'fileUploadBtn'
+
+# 开票－
+
+
+# 收票
+# 收票－收票列表
+# 收票－记收票页面
+attach_special_elem = '//*[@id="body"]/tab/new-input-invoice/div/div[2]/ul/table/tbody/tr[1]/td[6]/div/input'

@@ -2,7 +2,8 @@ from selenium import webdriver
 import time
 from base.public_page import PublicPage
 from test_case.invoice.invoice_elem import *
-from selenium.webdriver.support.ui import Select
+
+# from selenium.webdriver.support.ui import Select
 
 
 class InvoicePage:
@@ -10,6 +11,7 @@ class InvoicePage:
     # element loc
 
     # invoice_type:发票类型
+    # invoice_name 发票类型名称
     def __init__(self, driver, base_url, invoice_type, invoice_name):
         # self.driver = webdriver.Chrome()
         self.driver = driver
@@ -31,6 +33,29 @@ class InvoicePage:
         self.driver.get(self.base_url + '/app/invoice/tab/new-' +
                         self.invoice_type + '-invoice')
         time.sleep(3)
+# 开票
+# 开票－去开票导入页面
+
+    def go_to_import_invoice_page(self):
+        try:
+            self.driver.get(self.base_url +
+                            '/app/invoice/import-output-invoice')
+            time.sleep(3)
+        except Exception as e:
+            print('There was an exception when go_to_import_invoice_page %s',
+                  str(e))
+
+# 开票－开票列表合金额
+
+    def get_table_sum(self):
+        try:
+            publicPage = PublicPage(self.driver)
+            table_sum_elem = '//*[@id="body"]/' + self.invoice_type + '-invoice/div[3]/table/tbody/tr[11]/th[3]'
+            table_sum_loc = self.driver.find_element_by_xpath(table_sum_elem)
+            publicPage.get_value(table_sum_loc)
+
+        except Exception as e:
+            print('There was an exception when get_table_sum %s', str(e))
 
 # 选择发票类型;
 # invoice_name:发票类型名称（专票、普票、无票）
@@ -144,18 +169,24 @@ class InvoicePage:
         # time.sleep(1)
 
     # 设置备注
-    # attach_value:备注内容;
+    # attach_value:备注内容,收专票;
+    def set_attach_special(self,attach_value):
+        try:
+            publicPage = PublicPage(self.driver)
+            attach_loc = self.driver.find_element_by_xpath(attach_special_elem)
+            publicPage.set_value(attach_loc,attach_value)
+        except Exception as e:
+            print('There was an exception when set_attach_special %s',str(e))
 
+    # 设置备注
     def set_attach(self, attach_value):
         publicPage = PublicPage(self.driver)
         if self.invoice_type == 'input' and self.invoice_name == '专票':
-            attach_loc = self.driver.find_element_by_xpath(
-                '//*[@id="body"]/tab/new-' + self.invoice_type +
-                '-invoice/div/div[2]/ul/table/tbody/tr[1]/td[6]/input')
+            attach_elem = '//*[@id="body"]/tab/new-' + self.invoice_type + '-invoice/div/div[2]/ul/table/tbody/tr[1]/td[6]/input'
+            attach_loc = self.driver.find_element_by_xpath(attach_elem)
         else:
-            attach_loc = self.driver.find_element_by_xpath(
-                '//*[@id="body"]/tab/new-' + self.invoice_type +
-                '-invoice/div/div[2]/ul/table/tbody/tr[1]/td[5]/input')
+            attach_elem = '//*[@id="body"]/tab/new-' + self.invoice_type + '-invoice/div/div[2]/ul/table/tbody/tr[1]/td[5]/input'
+            attach_loc = self.driver.find_element_by_xpath(attach_elem)
         publicPage.set_value(attach_loc, attach_value)
         # time.sleep(1)
 
@@ -256,7 +287,7 @@ class InvoicePage:
         self.select_tax_rate(input_invoice_special_info[6])
         self.select_input_tax_category(input_invoice_special_info[7])
         self.set_sum(input_invoice_special_info[8])
-        self.set_attach(input_invoice_special_info[9])
+        self.set_attach_special(input_invoice_special_info[9])
         self.save_and_add()
 
     def type_category(self, input_invoice_special_info):

@@ -1,6 +1,7 @@
 import time
 from base.public_page import PublicPage
 from test_case.salary.salary_elem import *
+from base.upload_file_page import UploadFilePage 
 
 
 class SalaryPage:
@@ -73,3 +74,11 @@ class SalaryPage:
         labour_record_loc = self.driver.find_element_by_xpath(
             labour_record_elem)
         publicPage.is_element_present(labour_record_loc)
+
+# 员工导入页面
+# 员工导入
+    def import_stuff(self,file_dir):
+        publicPage = PublicPage(self.driver)
+        uploadFilePage = UploadFilePage(self.driver,file_dir)
+        uploadFilePage.upload_file()
+        

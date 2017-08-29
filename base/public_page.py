@@ -100,8 +100,8 @@ class PublicPage:
 
     def get_value(self, elem_loc):
         try:
-            self.is_alert_present(elem_loc)
-            return lem_loc.text
+            self.scroll_to_elem(elem_loc)
+            return elem_loc.text
         except Exception as e:
             logging.error('There was an exception when get_value s%', str(e))
 

@@ -46,6 +46,7 @@ class ReadExcel(object):
                 for col in range(s.ncols):
                     value = (str(s.cell(row, col).value))
                     col_value.append(value)
+                values.append(col_value)
         print('values=>',values)
         return values
     

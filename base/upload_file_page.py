@@ -10,7 +10,7 @@ class UploadFilePage(object):
         self.driver = driver
         self.file_dir = file_dir
 
-    def upload_file_qichu(self):
+    def upload_file(self):
         publicPage = PublicPage(self.driver)
         upload_btn_loc = self.driver.find_element_by_id('fileUploadBtn')
         # publicPage.is_element_prensent(upload_btn_loc)

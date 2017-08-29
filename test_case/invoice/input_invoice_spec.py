@@ -43,6 +43,10 @@ class InputInvoiceSpec(unittest.TestCase):
         excel_data = readExcel.get_value_in_order(0)
         for input_invoice_special_data in excel_data:
             invoicePage.type_input_invoice_special(input_invoice_special_data)
+        self.driver.get(Config.BASE_URL + '/app/invoice/input-invoice')
+        time.sleep(5)
+        table_sum = invoicePage.get_table_sum()
+        self.assertNotEqual(table_sum, 0)
 
     def test_new_raw():
         """一般纳税人-报表测试-记录收票（同一收支多条明细）"""
@@ -59,7 +63,6 @@ class InputInvoiceSpec(unittest.TestCase):
         invoicePage = InvoicePage(self.driver, Config.BASE_URL, 'input', '专票')
         invoicePage.go_to_new_invoice_page()
         invoicePage.new_row()
-       
 
     def tearDown(self):
         self.driver.quit()

@@ -18,6 +18,7 @@ class ReadExcelSpec(unittest.TestCase):
     def test_get_value_in_order(self):
         readExcel = ReadExcel(self.fir_dir)
         values = readExcel.get_value_in_order(0)
+        print('spec-values=',values)
         
 
     def test(self):
