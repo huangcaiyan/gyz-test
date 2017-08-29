@@ -64,6 +64,19 @@ class PublicPage:
         else:
             return False
 
+# 月份选择插件
+    def select_month(self,calen_xpath,month):
+        calen_loc = self.driver.find_element_by_xpath(calen_xpath)
+        self.click_elem(calen_loc)
+        pre_btn = self.driver.find_element_by_css_selector('.pull-left')
+        time.sleep(2)
+        if pre_btn:
+            return self.driver.find_elements_by_css_selector('.month-button')[month].click()
+        else:
+            return False
+            
+
+
 # 删除日历
 
     def delete_date(self, elem_xpath):

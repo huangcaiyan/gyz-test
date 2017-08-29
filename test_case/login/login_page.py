@@ -42,4 +42,4 @@ class LoginPage:
         self.type_username(login_data[0])
         self.type_password(login_data[1])
         self.click_login_button()
-        time.sleep(2)
+        time.sleep(3)

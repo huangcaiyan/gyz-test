@@ -9,9 +9,13 @@ class BeginningPeriodPage(object):
         # self.driver = webdriver.Chrome()
         self.driver = driver
 
-    def go_to_finance_import_page(self):
+    def go_to_finance_import_page(self, page_url):
         publicPage = PublicPage(self.driver)
-        publicPage.click_elem()
+        try:
+            return self.driver.get(page_url)
+        except Exception as e:
+            print('There was an exception when go_to_finance_import_page =s%',
+                  str(e))
 
     # 分配银行
     # 设置银行账户名称
