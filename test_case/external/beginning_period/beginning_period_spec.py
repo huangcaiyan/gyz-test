@@ -9,9 +9,9 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import logging
 from base.public_page import PublicPage
-from test_case.external.beginning_period_elem import *
+from .beginning_period_elem import *
 from base.read_excel import ReadExcel
-from test_case.external.beginning_period_page import BeginningPeriodPage
+from .beginning_period_page import BeginningPeriodPage
 
 
 class BeginningPeriodSpec(unittest.TestCase):

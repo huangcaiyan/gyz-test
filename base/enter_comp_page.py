@@ -5,8 +5,8 @@ from base.public_page import PublicPage
 from base.enter_comp_elem import *
 from test_case.setting.page.comp_billing_page import CompBillingPage
 from selenium.webdriver.support.ui import WebDriverWait
-from test_case.setting.page.comp_billing_elem import CompBillingElem
-from test_case.external.comp_list_elem import *
+from test_case.setting.page.comp_billing_elem import *
+# from test_case.external.comp_list_elem import *
 
 
 class EnterCompPage:

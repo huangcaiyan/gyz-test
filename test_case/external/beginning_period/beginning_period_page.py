@@ -1,7 +1,7 @@
 from selenium import webdriver
 import time
 from base.public_page import PublicPage
-from test_case.external.beginning_period_elem import *
+from .beginning_period_elem import *
 
 
 class BeginningPeriodPage(object):

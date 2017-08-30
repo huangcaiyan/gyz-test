@@ -1,9 +1,9 @@
 class Config(object):
 
     # base_url
-    # BASE_URL = 'https://firms.guanplus.com'
+    BASE_URL = 'https://firms.guanplus.com'
     # BASE_URL = 'http://guanplus-app-accountingfirm-web-dev-1.cn-north-1.eb.amazonaws.com.cn'
-    BASE_URL = 'https://web-gyz-stage.guanplus.com'
+    # BASE_URL = 'https://web-gyz-stage.guanplus.com'
 
     # 登录信息
     # pro
@@ -21,7 +21,7 @@ class Config(object):
     # －－－－－－－－－－－－－－－－－－－－－－－－－－－－－
     # stage
     COMP_NAME = 'auto_test'
-    COMP_NAME_YB = 'auto_test_0828'
+    COMP_NAME_YB = 'auto_test_yb'
 
 
     ENTER_COMP_INFO= [LOGIN_DATA,COMP_NAME]

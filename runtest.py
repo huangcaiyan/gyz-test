@@ -11,10 +11,10 @@ from test_case.salary.stuff_list_spec import StuffListSpec
 from test_case.invoice.input_invoice_spec import InputInvoiceSpec
 from test_case.external.read_excel_spec import ReadExcelSpec
 from test_case.external.upload_file_spec import UploadFileSpec
-from test_case.external.beginning_period_spec import BeginningPeriodSpec 
+from test_case.external.beginning_period.beginning_period_spec import BeginningPeriodSpec 
 from test_case.invoice.output_invoice_spec import OutputInvoiceSpec 
 from test_case.invoice.test import Test 
-
+from test_case.fixed_assets.fixed_spec import FixedSpec 
 
 if __name__ == '__main__':
     testSuite = unittest.TestSuite()
@@ -44,7 +44,7 @@ if __name__ == '__main__':
     # testSuite.addTest(SalarySpec('test_go_to_labour_list_page'))
     # testSuite.addTest(SalarySpec('test_go_to_salary_record_page'))
     # testSuite.addTest(SalarySpec('test_go_to_labour_record_page'))
-    testSuite.addTest(StuffListSpec('test_import_stuff'))
+    # testSuite.addTest(StuffListSpec('test_import_stuff'))
     
 
     # 发票
@@ -69,6 +69,10 @@ if __name__ == '__main__':
     # testSuite.addTest(BeginningPeriodSpec('test_import_beginning_data'))
     # testSuite.addTest(BeginningPeriodSpec('test_distribute_bank'))
     
+    # 固定资产
+    # 记固定资产
+    testSuite.addTest(FixedSpec('test_select_invoice_type'))
+
 
     now = time.strftime("%Y-%m-%d %H_%M_%S")
     filename = './report/' + now + '_result.html'

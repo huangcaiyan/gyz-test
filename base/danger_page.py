@@ -13,7 +13,7 @@ class DangerPage:
 
     def __init__(self, driver):
         self.driver = driver
-        self.driver = webdriver.Chrome()
+        # self.driver = webdriver.Chrome()
 
 # alert 框danger提示内容
     def get_alert_danger_msg(self):
